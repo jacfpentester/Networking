@@ -1,0 +1,33 @@
+Planificación y Administración de Redes
+Unidad 4: Configuración de equipos en red
+PARTE 2
+Curso: 1º ASIR
+PARTE TEORÍA (4 puntos)
+1. Responde a las siguientes preguntas: (3 puntos)
+• ¿Por qué necesitamos desarrollar VLANs?
+Para poder segmentar las redes físicas en redes virtuales y asi conseguir gestionar la red de manera mas eficiente, podiendo agrupar esas redes virtuales en pisos, plantas, zonas, etc. Y asi tener una visión mucho mejor a la hora de administrar las redes. Un punto muy importante es que reducimos los dominios de difusión ( cada vlan actúa como un L3 y tiene su propio dominio de difusión) y obtendremos mas seguridad, y menos sobrecarga de la red. 
+• Nombra los enfoques VLAN más utilizados para hacer la conexión
+Basicamente son 4 y se basan en el nivel o capa del modelo osi que utilicemos, en capa 1 usariamos los puertos en capa 2 las direcciones mac, en capa 3 las direcciones IP y en capa cuatro a nivel de aplicación es decir en métodos de sesión tipo autenticación de Windows etc, cada uno de ellos tiene sus pros y sus contras en caso de puerto el equipo si o si tendrá que conectarse a ese puerto físico por lo que no nos dará movilidad en el caso de mac por lo que esta limitada a los equipos de red en el caso de Ip como nos basamos en la Ip podríamos movernos por toda las zonas de nuestra red indistintamente del elemento de red al que nos conectemos o incluso con vpns nos daría libertad par salir al exterior y los elementos de autenticación de capa4 cualquier pc como en el caso de ip se podría conectar cosa que no sucede con el de mac ya que solo el equipo con esa mac se podrá conectar.
+• ¿Para qué sirve el protocolo STP?
+El Spanning Tree Protocol es un protocolo que utilizan los switches para poder saber como dirigir y gestionar el trafico que discurre entre la red, para lo que utiliza un sistema de prioridades básicamente y dar a cada switch una prioridad dependiendo el diseño que nosotros le demos y asi elegir uno para que sea el raíz de una vlan y otro el de otra vlan y asi dividir la carga, no solamente se encargan de balancear la carga si  no que también de crear redundancia pues si un switch cae automáticamente los que quedan activos a través de este protocolo activan una ruta para llegar a los equipos si existiese ante la perdida de ese switch, otro factor muy importante es evitar los loop ya que si mandamos un broadcast y tenemos dos rutas diferentes que llegan a el equipo que estamos buscando se producirá un loop y el sistema no sabra por que ruta conectarse con dicho equipo por lo que spanning tree elegira la ruta por la que ir de las dos poniendo puertos en estado bloqueado pero ese tema ya es otra historia lo de bloqueado escucha root, designado y alternativo.
+• ¿Qué opciones se permiten para realizar comunicaciones inter VLAN? ¿Cuál es mejor?
+Router con cada puerto para cada vlan: por lo que se necesitaría tantos puertos como vlans. Es el sistema antiguo y no es eficiente ya que necesitamos mas cables .
+Router con subinterfaces ( onstick ): un mismo puerto se subdivide en interfaces virtuales cada subinterfaz gestionara una vlan por lo que por un mismo cable podemos gestionar varias vlans. Ejemplo f0/0 se podría dividir en f0/0.10 para vlan 10 f0/0.20 para vlan 20 y asi con el máximo permitido de subinterfaces del equipo. 
+SVI: Se trata de una interfaz virtual, no vinculada a ningún puerto físico del dispositivo, que opera como una interfaz completa (incluyendo capa 3) de salida de una VLAN.  
+Típicamente una SVI es el default gateway de las terminales que forman parte del dominio de broadcast definido por una VLAN. Proporciona posibilidades de procesamiento en capa 3 a los paquetes que tienen origen o destino en puertos que son parte de la VLAN, en consecuencia es posible configurar la mayoría de los features vinculados a capa 3 de los puertos de los routers (dirección IP, ACLs, etc.) en estas interfaces. 
+
+• ¿Qué tipo de VLAN hay según el modo de trabajo?
+Estatica: Cada puerto esta asignado a una vlan de manera manual.    
+Dinamica: La configuracion de los puertos se hace por un servidor de vlans como el protocolo vtp.    
+Voz: Usada para equipos de Voz IP.
+• ¿Qué diferencia hay entre un enlace de acceso y uno troncal?
+Un enlace de acceso comunica los elementos finales como son pcs, impresoras etc, es decir elemento que no son exclusivos de red como los router o switches y que no tendrán que gestionar el protocolo spaning tree por ejemplo.
+Un enlace Troncal es el que coneccta elementos de red tales como routers y switches, ya que necesitan estar mandándose información de los estados de las rutas, conexiones, paquetes y gestionar la red como por ejemplo el protocolo spaning tree, a diferencia de los conectados a enlace de acceso que solo mandan petiones a la red y o llegan o no pero no se preocupan de nada mas.
+2. Dadas las siguientes IPv6 válidas, genera la IP con los 128 bits correspondientes en
+formato hexadecimal: (1 punto)
+• 2031:0:130F::9C0:876A:130B
+2031:0000:0130:0000:0000:09C0:876A:0130B
+• ::192.168.15.31
+0000:0000:0000:0000:0000:00000:C0A8:0F1F
+• ¿Por qué es incorrecta la siguiente dirección IPv6? 21AB::A::1234:5678 
+Por el duplicado de :: solo se puede usar una vez.
