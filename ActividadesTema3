@@ -1,0 +1,112 @@
+Actividades del tema 3
+Responde a las siguientes cuestiones:
+1.	¿Qué es un Sistema de Cableado Estructurado?
+El cableado estructurado se define como el conjunto de cables, conectores, canalizaciones y dispositivos que componen la infraestructura de telecomunicaciones interior de un edificio o recinto.
+Su función es transportar señales desde unos dispositivos (emisores) a otros (receptores) con el objetivo de crear la red de área local del mismo.
+Esta estructura contiene una combinación de cables trenzados (UTP/STP/FTP) , fibras ópticas (FO) y/o cables coaxiales que deben cumplir ciertos estándares universales para que puedan ser fácilmente entendidos por instaladores, administradores de redes…y cualquier otro técnico que trabaje con ellos.
+2.	¿Cuáles son los tres pilares que justifican el uso del Sistema de Cableado Estructurado?
+cableado horizontal, cableado vertical y cuarto de telecomunicaciones.
+
+3.	¿Qué es el estándar ANSI/TIA/EIA-569B? Indica sus principales elementos.
+Establece las características de instalación del cableado en edificios, teniendo en cuenta los espacios disponibles y las remodelaciones que se puedan realizar. Ej.: salas, armarios
+Básicamente establece también como se deben diseñar los cuartos de comunicaciones.
+4.	¿Qué es un área de trabajo?
+El área de trabajo es la zona donde están los distintos puestos de trabajo de la red. En cada
+uno de ellos habrá una roseta de conexión que permita conectar el dispositivo o dispositivos que se quieran integrar en la red.
+● El área de trabajo está formada por los cables de red que unen los equipos con las rosetas y cualquier filtro, adaptador que se necesite. Estos últimos irán siempre conectados en el exterior de la roseta.
+● El cable desde la roseta hasta el dispositivo a conectar se llama latiguillo (patch cord) y no puede superar los 3 metros de longitud.
+
+5.	¿Qué es una TO? Indica la longitud máxima y el tipo de cable de un latiguillo de red desde la TO al ordenador y desde la TO hasta el distribuidor de planta.
+TO se llama a los puntos de conexión (rosetas con conectores hembra donde se conectará el latiguillo que conectará desde la roseta el host) con los equipos finales.
+Se usan dos conectores para usar uno para datos y otro para voz, también podemos incluir mas para dar soporte ante un aumento de equipos o posibles roturas de los cables que tengamos. De hecho se supone que debe haber una combo de conexión cada 10metros cuadrados de habitación.
+El latiguillo será directo y de un máximo de 3 metros de longitud. Y un máximo de 90 metros entre la roseta y el gabinete de telecomunicaciones así mismo evitar unir con cableado de electricidad, trenzar los cables cat con otros y no crear tensión en el cable, así mismo evitar ángulos de 90 grados o superiores. Existen otros parámetros como ascensores, fluorescentes pero eso entra más en la disposición de la estructura horizontal.
+6.	¿Qué es un punto de consolidación? ¿Dónde se colocan?
+Son básicamente pachpaneles que comunican la FD con la TO, con el fin de que si cambiamos la configuración de la TO solo deberemos cablear desde las TO a el punto de consolidación.
+Se coloca en puntos estratégicos que optimicen el cambio de la disposición de los TO en un futuro, con el fin de optimizar el uso de cable nuevo ante ese cambio.
+
+
+7.	¿Qué es la canalización bajo suelo? Indica sus inconvenientes
+Se trata de conductos planificados en la obra de construcción o adaptación de la zona,
+ya que una vez instalados se colocan los materiales que compondrán el suelo, teniendo acceso a las canalizaciones solo a través de los puntos de registro o las cajas de mecanismos que se hayan habilitado durante la instalación.
+Su principal inconveniente es que limita la expansión y distribución de la sala.
+8.	¿Qué es la canalización bajo suelo técnico? Indica la ventaja que tiene respecto a la canalización sin suelo técnico.
+Consiste en un sistema de soportes sobre el que se apoya una estructura en la que se colocarán unas placas que actuarán como suelo. El material de esas placas es muy diverso: madera, PVC, plaquetas, etc.
+Tiene la ventaja de ser más versátil que la canalización bajo suelo y suele utilizarse en superficies diáfanas, donde se necesita dar suministro a áreas de trabajo que no tienen paredes cerca. Así mismo no limita la expansión y distribución de la sala.
+
+9.	¿Qué es el distribuidor de planta (FD)? ¿Qué distancia máxima puede haber entre el FD y la TO? ¿Y entre el FD y el ordenador?
+Todo el cableado horizontal debe dirigirse hacia un cuarto de comunicaciones. Según el tamaño de la red y la empresa puede haber uno por planta, por aula o uno general.
+A eso se le llama FD y desde el al TO puede haber un máximo de 90metros y entre el  FD y el usuario 5 metros mas es decir 95metros aunque en la diapositiva pone 3 metros.
+
+10.	Según la norma 569-B, ¿Qué características debe reunir la sala de telecomunicaciones?
+No se recomienda compartir la sala de telecomunicaciones con
+equipamiento de energía
+La ubicación ideal de la sala de telecomunicaciones es en el centro del área a la
+que deben prestar servicio. Se recomienda disponer de por lo menos una sala de
+telecomunicaciones por piso. En los siguientes casos se requiere de más de una
+sala de telecomunicaciones por piso:
+El área a servir es mayor a 1.000 m2 . En estos casos, se recomienda una sala de telecomunicaciones por cada 1.000 m2 de área utilizable
+La distancia de las canalizaciones de distribución horizontal desde la sala
+de telecomunicaciones hasta las áreas de trabajo no puede superar en
+ningún caso los 90 m. Si algún área de trabajo se encuentra a más de esta
+distancia de la sala de telecomunicaciones, debe preverse otra sala de
+telecomunicaciones, para cumplir con este requerimiento.
+Si es necesario disponer de más de una sala de telecomunicaciones en un mismo
+piso, se recomienda interconectarlas con canalizaciones del tipo “montante”.
+Las salas de telecomunicaciones deben estar apropiadamente iluminadas. Se
+recomienda que el piso, las paredes y el techo sean de colores claros
+(preferiblemente blancos), para mejorar la iluminación.
+No debe tener cielorraso. Es recomendable disponer de sobre piso, o piso elevado.
+Se deben tener en cuenta los requerimientos eléctricos de los equipos de telecomunicaciones que se instalarán en estas salas. En algunos casos, es
+recomendable disponer de paneles eléctricos propios para las salas de
+telecomunicaciones.
+Todas los accesos de las canalizaciones a las salas de telecomunicaciones deben
+estar selladas con los materiales antifuego adecuados.
+Es recomendable disponer de ventilación y/o aires acondicionados de acuerdo a
+las características de los equipos que se instalarán en estas salas.
+
+11.	¿Qué es el distribuidor de edificios (BD)? Explica dónde se suele ubicar
+El distribuidor de edificio se utiliza para recoger todo el cableado proveniente de los diferentes distribuidores de planta del edificio.
+El distribuidor de edificio se suele colocar en la planta superior o baja del edificio, en función de las características del mismo y de la infraestructura de la red. Se buscará una zona en la que el acceso sea fácil y seguro y que el cableado del subsistema vertical sea lo más directo posible.
+Hay que evitar ubicar el distribuidor de edificio en plantas inferiores al nivel del suelo, salvo que estén lo suficientemente protegidas contra inundaciones.
+Cuando la planta del distribuidor de edificio tiene un subsistema horizontal, el distribuidor de planta se suele ubicar en la misma sala de telecomunicaciones que el distribuidor de edificio.
+Hay que tener en cuenta que, si se fusionan los espacios del distribuidor de edificio con el de planta, las dimensiones deberán ser las necesarias para albergar toda la infraestructura.
+12.	¿Qué distancia máxima puede haber entre el distribuidor de edificio (BD) y el distribuidor de planta (FD)? ¿Qué tipos de cable se utilizan?
+No mas de 300metros para fibra monomodo, menos de 100metros con cable par trenzado.
+
+13.	¿Qué funciones tiene el distribuidor de campus (CD)?
+El distribuidor de campus es el elemento central de la red, ya que interconecta las diferentes redes de cada uno de los edificios que constituyen el campus al completo. Por otro lado, a él se vinculan muchos de los elementos clave de la red, como pueden ser servidores de seguridad, sistemas de filtrado y control de acceso, servicios generales de la red, etc.
+14.	¿Qué distancia máxima puede haber entre el distribuidor de campus (CD) y el distribuidor de edificio (BD)?
+Máximo 2000metros
+
+15.	¿Qué es el TMGB?
+Placa donde se conectan todas las tomas de tierra de los rack (TGB) con la pica de tierra.
+16.	¿Pueden ir por la misma canalización cables de datos y de energía? Explica por qué.
+No, porque se crean interferencias electromagnéticas.
+
+17.	¿Qué son los materiales intumescentes? ¿Qué tipos podemos encontrar?
+Son materiales que reaccionan frente al fuego y crean una película de protección.
+Pinturas, manguitos, anillos, Almohadillas. . .
+18.	Indica el significado que tienen las etiquetas: ¿Sirve para algo una etiqueta?
+
+
+◦ AG02-12:08
+AG02= nombre del Rack
+-12 = altura en el Rack
+:8 = puerto
+◦ AG04-20
+AG04 = nombre del Rack
+-20 = altura en el Rack
+
+19.	¿En qué consiste la certificación del cableado?
+La certificación es un proceso que se lleva a cabo utilizando material específico y de carácter profesional, certificador, haciendo pruebas de rendimiento y medida sobre el terreno y test de PASA / FALLA.
+20.	Indica el color de las terminaciones de RJ45 según la norma 568-A
+Blanco y verde, verde, blanco y naranja, azul, blanco y azul, naranja, blanco y marron, marron.
+
+
+21.	Indica cuándo se utiliza el cable cruzado
+Elementos de red igual, es decir dos routers, dos switchs, salvo una excepción la de un router con un pc.
+22.	¿Por qué motivo se utiliza el software de simulación de redes? Ej: Packet Tracer
+Para realizar una simulación de una red para poder después implementarla a nivel físico, también nos sirve para realizar las configuraciones de los equipos desde software las simulaciones y después copiarlas en los equipos reales.
+
+23.	Incluye aquí el presupuesto realizado con un formato tipo factura
+Los pongo en dos archivos uno que es jpg que es el switch y el rack sacados de amazon y el otro que es un pdf que esta todo lo demás.
